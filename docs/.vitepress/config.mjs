@@ -13,14 +13,13 @@ export default defineConfig({
     // 点击 NovaAPI 回主页
     logoLink: 'https://api.novaapis.com/',
 
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ]
+    // 隐藏左侧边栏
+    sidebar: [],
+
+    // 隐藏底部 上一页/下一页
+    docFooter: {
+      prev: false,
+      next: false,
+    },
   }
 })
