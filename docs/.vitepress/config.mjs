@@ -5,6 +5,7 @@ export default defineConfig({
   title: "我的产品文档",
   description: "api聚合平台",
   base: '/docs/',
+  cleanUrls: true,
   appearance: false,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
