@@ -7,6 +7,10 @@ export default defineConfig({
   base: '/docs/',
   cleanUrls: true,
   appearance: false,
+  // 标签页图标(favicon)
+  head: [
+    ['link', { rel: 'icon', type: 'image/png', href: '/docs/nova.png' }],
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     siteTitle: 'NovaAPI',
