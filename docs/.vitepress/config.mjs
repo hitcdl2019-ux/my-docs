@@ -9,11 +9,9 @@ export default defineConfig({
   appearance: false,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    siteTitle: 'NovaAPI', 
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
-    ],
+    siteTitle: 'NovaAPI',
+    // 点击 NovaAPI 回主页
+    logoLink: 'https://api.novaapis.com/',
 
     sidebar: [
       {
@@ -23,10 +21,6 @@ export default defineConfig({
           { text: 'Runtime API Examples', link: '/api-examples' }
         ]
       }
-    ],
-
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ]
   }
 })
