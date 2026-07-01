@@ -1,0 +1,11 @@
+/*
+  站点全局无侧边栏(sidebar: [])，VitePress 默认会把无侧边栏页面的
+  .container 限宽到 1104px 却不加水平居中(缺少 margin: 0 auto)，
+  导致正文整体靠左、右侧留大片空白，视觉上"没有左右对齐"。
+  这里补上居中，让服务条款/隐私政策等长文在宽屏下左右对称。
+*/
+@media (min-width: 960px) {
+  .VPDoc:not(.has-sidebar) .container {
+    margin: 0 auto;
+  }
+}
